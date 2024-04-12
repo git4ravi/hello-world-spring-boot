@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_git4ravi_hello_world_spring_boot_1712950082130-pr-trigger-input-set
+  identifier: Build_git4ravi_hello_world_spring_boot_1712950082130prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: RKProject
+  pipeline:
+    identifier: Build_git4ravi_hello_world_spring_boot_1712950082130
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
