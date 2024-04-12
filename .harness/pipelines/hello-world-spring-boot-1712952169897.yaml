@@ -1,0 +1,33 @@
+pipeline:
+  name: Build hello-world-spring-boot
+  identifier: Build_git4ravi_hello_world_spring_boot_1712952207038
+  projectIdentifier: testapp
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: Build
+        identifier: Build
+        type: CI
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Echo Welcome Message
+                  identifier: Echo_Welcome_Message
+                  spec:
+                    shell: Sh
+                    command: echo "Welcome to Harness CI"
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1711519683338
+        repoName: git4ravi/hello-world-spring-boot
+        build: <+input>
