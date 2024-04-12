@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_git4ravi_hello_world_spring_boot_1712952207038-push-trigger-input-set
+  identifier: Build_git4ravi_hello_world_spring_boot_1712952207038pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: testapp
+  pipeline:
+    identifier: Build_git4ravi_hello_world_spring_boot_1712952207038
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
