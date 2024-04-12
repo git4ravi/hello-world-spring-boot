@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_git4ravi_hello_world_spring_boot_1712950082130-push-trigger-input-set
+  identifier: Build_git4ravi_hello_world_spring_boot_1712950082130pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: RKProject
+  pipeline:
+    identifier: Build_git4ravi_hello_world_spring_boot_1712950082130
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
