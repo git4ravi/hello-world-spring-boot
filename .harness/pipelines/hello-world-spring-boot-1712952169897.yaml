@@ -20,7 +20,7 @@ pipeline:
                     shell: Sh
                     command: |-
                       echo "Welcome to Harness CI"
-                      ./gradle clean build
+                      ./gradlew clean build
           platform:
             os: Linux
             arch: Amd64
