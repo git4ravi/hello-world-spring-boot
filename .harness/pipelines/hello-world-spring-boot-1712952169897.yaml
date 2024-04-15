@@ -18,9 +18,15 @@ pipeline:
                   identifier: Echo_Welcome_Message
                   spec:
                     shell: Sh
-                    command: |-
+                    command: |
                       echo "Welcome to Harness CI"
-                      ./gradlew clean build
+              - step:
+                  type: Run
+                  name: Run gradle cmommand
+                  identifier: Run_gradle_cmommand
+                  spec:
+                    shell: Sh
+                    command: ./gradlew clean build
           platform:
             os: Linux
             arch: Amd64
