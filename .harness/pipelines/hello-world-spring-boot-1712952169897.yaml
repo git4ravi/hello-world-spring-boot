@@ -26,7 +26,9 @@ pipeline:
                   identifier: Run_gradle_cmommand
                   spec:
                     shell: Sh
-                    command: ./gradlew clean build
+                    command: |-
+                      chmod +x gradlew
+                      ./gradlew clean build
           platform:
             os: Linux
             arch: Amd64
